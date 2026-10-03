@@ -1,0 +1,2 @@
+touch src/pc/controller/controller_entry_point.c
+make VERSION=us CC="gcc -Dgfx_dxgi_api=gfx_dummy_wm_api -Dgfx_direct3d11_api=gfx_dummy_renderer_api -Daudio_wasapi=audio_raylib_api -Dcontroller_xinput=controller_raylib_api -DPLATFORM_DESKTOP -DGRAPHICS_API_OPENGL_33" LDFLAGS="-lm -no-pie -mwindows -lraylib -lglfw3 -lopengl32 -lgdi32 -lwinmm -lole32 -lshell32" OBJS="build/us_pc/src/pc/gfx/gfx_raylib.o build/us_pc/src/pc/audio/audio_raylib.o build/us_pc/src/pc/controller/controller_raylib.o" -j4

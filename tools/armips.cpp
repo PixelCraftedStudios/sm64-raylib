@@ -46,6 +46,7 @@ SOFTWARE.
 #else
 #define ARMIPS_EXCEPTIONS 0
 #endif
+#include <cstdint>
 
 #include <cstdio>
 #include <vector>
